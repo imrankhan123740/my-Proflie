@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	<style type="text/css">
+		
+
+		*{
+		  margin: 0;
+		  padding: 0;
+		  box-sizing: border-box;
+		  list-style: none;
+		  text-decoration: none;
+		  font-family: 'Josefin Sans', sans-serif;
+		   text-transform:capitalize;
+		}
+
+		body
+		{
+		  background-color: white;
+		}
+
+	.a1{
+		//	overflow: hidden;
+		  display: flex;
+		  position: relative;
+		}
+
+	.a1 .a2
+		{
+
+		  width: 200px;
+		  height: 100%;
+		  background:repeating-conic-gradient(red,blue,green) ;
+		  padding: 30px 0px;
+		  position: fixed;
+
+		 
+		   /* background-image:url(https://images.pexels.com/photos/1853354/pexels-photo-1853354.jpeg?auto=compress&cs=tinysrgb&w=600) ;
+		    
+		     background-size: cover;
+		 	 animation: side 5s linear alternate infinite;
+		     overflow: hidden;*/
+			 
+
+		}
+
+	.a1 .a2 h2{
+		  color: white;
+		  text-transform: uppercase;
+		  text-align: center;
+		  margin-bottom: 30px;
+			}
+
+	.a1 .a2 ul li{
+		  padding: 15px;
+		
+		 border-bottom: 1px solid rgba(0,0,0,0.05);
+		  border-top: 1px solid rgba(255,255,255,0.05);
+		}   
+
+	.a1 .a2 ul li a{
+		 color: white;
+		  display: block;
+		}
+
+		.a1 .a2 ul li a .fas{
+		  width: 25px;
+				}
+
+		.a1 .a2 ul li:hover{
+		  background-color: #594f8d;
+		}
+		   
+		.a1 .a2 ul li:hover a{
+				  color: white;
+				}
+
+		.a1 .a2 .media{
+			  position: absolute;
+			  bottom: 0;
+			  left: 10%;
+			 // transform: translateX(-50%);
+			  display: flex;
+		}
+
+		.a1 .a2 .media a{
+		 
+		  width: 40px;
+		  background: #594f8d;
+		  height: 40px;
+		  line-height: 45px;
+		  text-align: center;
+		  margin: 0 5px;
+		  color: #bdb8d7;
+		  border-top-left-radius: 5px;
+		  border-top-right-radius: 5px;
+		     /*background-image:url(https://images.pexels.com/photos/1853354/pexels-photo-1853354.jpeg?auto=compress&cs=tinysrgb&w=600) ;
+		    
+		     background-size: cover;
+		 	 animation: media 5s linear alternate infinite;
+		     overflow: hidden;*/
+		}
+
+		.a1 .main{
+		  width: 100%;
+		  margin-left: 200px;
+		}
+
+		.a1 .main .heading{
+		  padding: 20px;
+		  background: white;
+		  color: #717171;
+		  border-bottom: 1px solid #e0e4e8;
+		}
+
+		.a1 .main .information{
+		  margin: 20px;
+		  color: #717171;
+		  line-height: 25px;
+				}
+
+		.a1 .main .information div{
+		  margin-bottom: 20px;
+				}
+				
+					/*@keyframes side{
+				  10% { background-position:100% -100% }
+				  20%{background-image:url(https://images.pexels.com/photos/816608/pexels-photo-816608.jpeg?auto=compress&cs=tinysrgb&w=600); }
+				  30%{background-image:url(https://images.pexels.com/photos/41951/solar-system-emergence-spitzer-telescope-telescope-41951.jpeg?auto=compress&cs=tinysrgb&w=600); }
+				   40%{background-image:url(https://images.pexels.com/photos/1025469/pexels-photo-1025469.jpeg?auto=compress&cs=tinysrgb&w=600); }
+				    50%{background-image:url(https://images.pexels.com/photos/1624438/pexels-photo-1624438.jpeg?auto=compress&cs=tinysrgb&w=600); }
+				     60%{background-image:url(https://images.pexels.com/photos/1624438/pexels-photo-1624438.jpeg?auto=compress&cs=tinysrgb&w=600); }
+				     70%{background-image:url(https://images.pexels.com/photos/2670898/pexels-photo-2670898.jpeg?auto=compress&cs=tinysrgb&w=600); }
+				     80%{background-image:url(https://images.pexels.com/photos/821644/pexels-photo-821644.jpeg?auto=compress&cs=tinysrgb&w=600); }
+				  100% { background-position:-100% 100% }
+				}
+
+					@keyframes media{
+				  10% { background-position:100% -100% }
+				  20%{background-image:url(https://images.pexels.com/photos/816608/pexels-photo-816608.jpeg?auto=compress&cs=tinysrgb&w=600); }
+				  30%{background-image:url(https://images.pexels.com/photos/41951/solar-system-emergence-spitzer-telescope-telescope-41951.jpeg?auto=compress&cs=tinysrgb&w=600); }
+				   40%{background-image:url(https://images.pexels.com/photos/1025469/pexels-photo-1025469.jpeg?auto=compress&cs=tinysrgb&w=600); }
+				    50%{background-image:url(https://images.pexels.com/photos/1624438/pexels-photo-1624438.jpeg?auto=compress&cs=tinysrgb&w=600); }
+				     60%{background-image:url(https://images.pexels.com/photos/1624438/pexels-photo-1624438.jpeg?auto=compress&cs=tinysrgb&w=600); }
+				     70%{background-image:url(https://images.pexels.com/photos/2670898/pexels-photo-2670898.jpeg?auto=compress&cs=tinysrgb&w=600); }
+				     80%{background-image:url(https://images.pexels.com/photos/821644/pexels-photo-821644.jpeg?auto=compress&cs=tinysrgb&w=600); }
+				  100% { background-position:-100% 100% }
+				}*/
+				
+
+
+
+
+	</style>
+	<title></title>
+</head>
+<body>
+
+
+<div class="a1">
+    <div class="a2">
+        <h2>helow</h2>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="#"><i class="fas fa-user"></i>Profile</a></li>
+            <li><a href="#"><i class="fas fa-address-card"></i>About</a></li>
+            <li><a href="#"><i class="fas fa-project-diagram"></i>portfolio</a></li>
+            <li><a href="#"><i class="fas fa-blog"></i>Blogs</a></li>
+            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> envelope</a></li>
+            <li><a href="#"><i class="fa fa-diamond" aria-hidden="true"></i> diamond</a></li>
+            <li><a href="#"><i class="fa fa-desktop" aria-hidden="true"></i> desttop</a></li>
+            <li><a href="#"><i class="fa fa-train" aria-hidden="true"></i> train</a></li>
+            <li><a href="#"><i class="fa fa-motorcycle" aria-hidden="true"></i></i> motorcycle</a></li>
+            <li><a href="#"><i class="fas fa-address-book"></i> Contact</a></li>
+            <li><a href="#"><i class="fas fa-map-pin"></i> Map</a></li>
+        </ul>
+        <div class="media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="main">
+        <div class="heading">helow</div> 
+        <div class="information">
+           <div>
+          	ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+         ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+          <div>
+          	ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+         ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+
+       <div>
+          	ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+          ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+
+            <div>
+            	ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		          proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+		      	 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+     		 </div>
+      </div>
+    </div>
+</div>
+
+
+</body>
+</html>

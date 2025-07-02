@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <title></title>
+  <style type="text/css">
+    body{
+      overflow: hidden;
+    }
+
+        .maintop {
+                width: 609px;
+                height: 420px;
+                margin: 100px auto;
+                position: relative;
+                display: block;
+                padding: 0;
+                justify-self: center;
+                left: -200px;
+
+
+        }
+
+
+
+.maintop .in {
+      display: none;
+      margin-left: 300px;
+}
+
+.slide-wrapper {
+      display: block;
+       margin-left: 500px;
+}
+
+.slide {
+      width: 100%;
+      height: 100%;
+      display: block;
+    position: absolute;
+
+    transform: scale(0);
+    transition: all .7s ease-in-out;
+}
+
+        .slide .pics {
+              width: 390%;
+              height: 350%;
+              position: fixed;
+              left: -690px;
+              justify-self: center;
+        }
+
+        .nav .l1 {
+          
+        width: 300px;
+        text-align: center;
+        position: absolute;
+        height: 350%;
+        z-index: 9;
+        opacity: 0;
+        font-size: 5em;
+        line-height: 480px;
+        cursor: pointer;
+        color: white;
+        background-color: rgba(255,255,255,.5);
+        display: none;
+        margin-right:-1100px ;
+        margin-left: -674px;
+
+        transition: opacity .2s;
+        }
+
+        .nav .next {
+        margin-left: 10px;
+        }
+        
+
+        .slide:hover + .nav .l1 {
+        opacity: 0.5;
+        }
+
+        .nav .l1:hover {
+        opacity: 1;
+        }
+
+        .in:checked + .slide-wrapper .slide {
+            opacity: 1;
+
+            transform: scale(1);
+
+            transition: opacity 1s ease-in-out;
+        }
+
+        .in:checked + .slide-wrapper .nav .l1 {
+          width: 100px;
+          overflow: hidden;
+        display: block;
+
+        }
+
+.next,.prev{
+  width: 100px;
+}
+
+
+
+  </style>
+  
+
+
+</head>
+<body>
+ 
+
+<div class="maintop" style="height: 150px; width: 200px;">
+   
+    <input type="radio" name="radio-btn" id="img-1" checked class="in" />
+    <div class="slide-wrapper">
+      <div class="slide"><img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2F0Y2h8ZW58MHx8MHx8fDA%3D"class="pics"></div>
+
+      <div class="nav" style="overflow: hidden; ">
+        <label for="img-6" class="prev l1">&#x2039;</label>
+        <label for="img-2" class="next">&#x203a;</label>
+      </div>
+    </div>
+
+    <input type="radio" name="radio-btn" id="img-2"class="in" />
+   <div class="slide-wrapper">
+      <div class="slide"><img src="https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d2F0Y2h8ZW58MHx8MHx8fDA%3D"class="pics"></div>
+
+      <div class="nav">
+        <label for="img-1" class="prev l1" style="width: 10px">&#x2039;</label>
+        <label for="img-3" class="next l1">&#x203a;</label>
+      </div>
+    </div>
+
+    <input type="radio" name="radio-btn" id="img-3" class="in"/>
+    <div class="slide-wrapper">
+      <div class="slide"><img src="https://images.unsplash.com/photo-1506193095-80bc749473f2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdhdGNofGVufDB8fDB8fHww"class="pics"></div>
+
+      <div class="nav">
+        <label for="img-2" class="prev l1">&#x2039;</label>
+        <label for="img-4" class="next l1">&#x203a;</label>
+      </div>
+    </div>
+
+    <input type="radio" name="radio-btn" id="img-4" class="in"/>
+    <div class="slide-wrapper">
+      <div class="slide"><img src="https://plus.unsplash.com/premium_photo-1681504446264-708b83f4ea12?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHdhdGNofGVufDB8fDB8fHww"class="pics"></div>
+
+      <div class="nav">
+        <label for="img-3" class="prev l1">&#x2039;</label>
+        <label for="img-5" class="next l1">&#x203a;</label>
+      </div>
+    </div>
+
+    <input type="radio" name="radio-btn" id="img-5" class="in"/>
+    <div class="slide-wrapper">
+      <div class="slide"><img src="https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdhdGNofGVufDB8fDB8fHww" class="pics"></div>
+
+      <div class="nav">
+        <label for="img-4" class="prev l1">&#x2039;</label>
+        <label for="img-6" class="next l1">&#x203a;</label>
+      </div>
+    </div>
+
+    <input type="radio" name="radio-btn" id="img-6" class="in"/>
+    <div class="slide-wrapper">
+      <div class="slide"><img src="https://images.unsplash.com/photo-1601924357840-3e50ad4dd9fd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdhdGNofGVufDB8fDB8fHww" class="pics"></div>
+
+      <div class="nav">
+        <label for="img-5" class="prev l1">&#x2039;</label>
+        <label for="img-1"  class="next l1">&#x203a;</label>
+      </div>
+    </div>
+  </div>
+
+
+ 
+
+</body>
+</html>

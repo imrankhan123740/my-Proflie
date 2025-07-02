@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>3D Digital Rain Effect</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            overflow: hidden;
+            perspective: 1000px;
+            height: 100vh;
+        }
+        
+        /* Matrix digital rain background */
+        #matrix-rain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        
+        /* 3D Container for all elements */
+        .matrix-container {
+            transform-style: preserve-3d;
+            min-height: 100vh;
+        }
+        
+        /* Navbar - Disappears and reappears in 3D */
+        .nav-matrix {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-bottom: 1px solid #0f0;
+            z-index: 100;
+            animation: matrixNav 15s infinite;
+            transform-origin: top center;
+        }
+        
+        @keyframes matrixNav {
+            0%, 85% { 
+                transform: translate3d(0, 0, 0) rotateX(0deg); 
+                opacity: 1;
+            }
+            87% { 
+                transform: translate3d(0, -100px, 200px) rotateX(90deg); 
+                opacity: 0;
+            }
+            90% { 
+                transform: translate3d(100px, 50px, -300px) rotateX(180deg); 
+                opacity: 0.5;
+            }
+            93% { 
+                transform: translate3d(0, 0, 0) rotateX(0deg); 
+                opacity: 1;
+            }
+        }
+        
+        /* Content blocks - Fly around in 3D space */
+        .matrix-block {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: rgba(0, 255, 0, 0.1);
+            border: 1px solid #0f0;
+            padding: 20px;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            transform-style: preserve-3d;
+        }
+        
+        .block1 {
+            top: 20%;
+            left: 10%;
+            animation-name: matrixBlock1;
+        }
+        
+        .block2 {
+            top: 40%;
+            left: 60%;
+            animation-name: matrixBlock2;
+        }
+        
+        .block3 {
+            top: 70%;
+            left: 30%;
+            animation-name: matrixBlock3;
+        }
+        
+        @keyframes matrixBlock1 {
+            0%, 70% { transform: translate3d(0, 0, 0) rotateY(0deg); }
+            75% { transform: translate3d(300px, -100px, 500px) rotateY(360deg); }
+            80% { transform: translate3d(-200px, 200px, -300px) rotateY(180deg); }
+            85% { transform: translate3d(0, 0, 0) rotateY(0deg); }
+        }
+        
+        @keyframes matrixBlock2 {
+            0%, 65% { transform: translate3d(0, 0, 0) rotateX(0deg); }
+            70% { transform: translate3d(0, 300px, 200px) rotateX(270deg); }
+            75% { transform: translate3d(400px, -100px, -400px) rotateX(180deg); }
+            80% { transform: translate3d(0, 0, 0) rotateX(0deg); }
+        }
+        
+        @keyframes matrixBlock3 {
+            0%, 75% { transform: translate3d(0, 0, 0) rotateZ(0deg); }
+            80% { transform: translate3d(-300px, 100px, 600px) rotateZ(360deg); }
+            85% { transform: translate3d(200px, -200px, -200px) rotateZ(180deg); }
+            90% { transform: translate3d(0, 0, 0) rotateZ(0deg); }
+        }
+        
+        /* Matrix code text */
+        .matrix-code {
+            position: absolute;
+            font-size: 14px;
+
+color: #0f0;
+            opacity: 0.8;
+            animation: codeFall linear infinite;
+        }
+        
+        @keyframes codeFall {
+            to { transform: translateY(100vh); }
+        }
+        
+        /* Footer - Glitches in 3D */
+        .footer-matrix {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-top: 1px solid #0f0;
+            animation: matrixFooter 25s infinite;
+            transform-origin: bottom center;
+        }
+        
+        @keyframes matrixFooter {
+            0%, 90% { 
+                transform: translate3d(0, 0, 0) rotateX(0deg); 
+                opacity: 1;
+            }
+            92% { 
+                transform: translate3d(50px, 100px, -200px) rotateX(45deg); 
+                opacity: 0.3;
+            }
+            94% { 
+                transform: translate3d(-100px, 50px, 300px) rotateX(90deg); 
+                opacity: 0.7;
+            }
+            96% { 
+                transform: translate3d(0, 0, 0) rotateX(0deg); 
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Matrix digital rain background -->
+    <canvas id="matrix-rain"></canvas>
+    
+    <div class="matrix-container">
+        <!-- Navbar that disappears in 3D -->
+        <nav class="nav-matrix">
+            <h1>SYSTEM CONTROL</h1>
+            <p>ACCESS LEVEL: <span id="access-level">TOP SECRET</span></p>
+        </nav>
+        
+        <!-- 3D content blocks -->
+        <div class="matrix-block block1">
+            <h2>DATA NODE 01</h2>
+            <p>LOADING CORE PROTOCOLS...</p>
+        </div>
+        
+        <div class="matrix-block block2">
+            <h2>DATA NODE 02</h2>
+            <p>DECRYPTION IN PROGRESS...</p>
+        </div>
+        
+        <div class="matrix-block block3">
+            <h2>DATA NODE 03</h2>
+            <p>TRANSMISSION ERROR...</p>
+        </div>
+        
+        <!-- Random matrix code text -->
+        <div id="code-container"></div>
+        
+        <!-- Footer with 3D glitches -->
+        <footer class="footer-matrix">
+            <p>SYSTEM STATUS: <span id="status">UNSTABLE</span></p>
+        </footer>
+    </div>
+
+    <script>
+        // Matrix digital rain effect
+        const canvas = document.getElementById('matrix-rain');
+        const ctx = canvas.getContext('2d');
+        
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        
+        const chars = "01";
+        const fontSize = 14;
+        const columns = canvas.width / fontSize;
+        const drops = [];
+        
+        for(let i = 0; i < columns; i++) {
+            drops[i] = Math.random() * -1000;
+        }
+        
+        function drawMatrixRain() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            ctx.fillStyle = '#0f0';
+            ctx.font = fontSize + 'px monospace';
+            
+            for(let i = 0; i < drops.length; i++) {
+                const text = chars.charAt(Math.floor(Math.random() * chars.length));
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                
+                if(drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                
+                drops[i]++;
+            }
+        }
+        
+        setInterval(drawMatrixRain, 33);
+        
+        // Create falling code elements
+        function createFallingCode() {
+            const code = document.createElement('div');
+            code.className = 'matrix-code';
+            
+            // Generate random code text
+            let codeText = '';
+            const length = 10 + Math.floor(Math.random() * 20);
+
+
+for(let i = 0; i < length; i++) {
+                codeText += Math.random() > 0.5 ? '1' : '0';
+            }
+            
+            code.textContent = codeText;
+            code.style.left = Math.random() * 100 + 'vw';
+            code.style.animationDuration = (5 + Math.random() * 10) + 's';
+            
+            document.getElementById('code-container').appendChild(code);
+            
+            // Remove after animation completes
+            setTimeout(() => {
+                code.remove();
+            }, parseFloat(code.style.animationDuration) * 1000);
+        }
+        
+        // Create falling code periodically
+        setInterval(createFallingCode, 300);
+        
+        // Randomly change status text
+        const statusTexts = ["UNSTABLE", "CRITICAL", "WARNING", "CORRUPTED", "OVERLOAD"];
+        setInterval(() => {
+            document.getElementById('status').textContent = 
+                statusTexts[Math.floor(Math.random() * statusTexts.length)];
+        }, 2000);
+        
+        // Randomly change access level
+        const accessLevels = ["TOP SECRET", "CLASSIFIED", "RESTRICTED", "EYES ONLY"];
+        setInterval(() => {
+            document.getElementById('access-level').textContent = 
+                accessLevels[Math.floor(Math.random() * accessLevels.length)];
+        }, 3000);
+        
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+</body>
+</html>

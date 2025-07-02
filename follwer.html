@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<title></title>
+	<style type="text/css">
+		*{
+			font-family: Calibri Light;
+			box-sizing:border-box;
+			font-weight: bold;
+		}
+        body{
+            margin: 0;
+            padding: 0;
+        }
+		.first{
+			overflow: hidden;
+			background: darkblue;
+			color: white;
+
+		}
+		
+		.navbtn>li>button{
+			//width: 170px;
+			padding: 20px 50px 20px 50px;
+			margin: 0;
+
+		}
+
+
+
+
+		.colum{
+			display: grid;
+			grid-template-columns:300px 300px 300px;
+			gap: 20px;
+			
+
+		}
+a{
+	text-decoration: none;
+}
+
+.Shadow{
+	//box-shadow: 10px 10px 10px 10px gray ;
+	box-shadow: inset 5px 5px 10px 10px rgba(0, 0, 0, 0.1);
+	margin-left: 150px;
+	border-radius: 20px;
+}
+
+#btn-1{
+	font-family: 'segoe UI', sytem-ui, sans-serif;
+background:#E1306c;
+padding: 20px 40px 20px 40px;
+//background: radial-gradient(circle, rgba(28, 174, 202, 10) 20%, rgba(148, 187, 233, 1) 100%);
+overflow: hidden;
+}
+#btn-2{
+	background: #000000;
+	padding: 20px 50px 20px 50px;
+//background: radial-gradient(circle, rgba(228, 174, 238, 1) 0%, rgba(148, 187, 233, 1) 100%);
+
+}
+#btn-3{
+	background: red;
+	padding: 20px 50px 20px 50px;
+//background: linear-gradient(90deg,rgba(42, 82, 155, 0.77) 28%, rgba(87, 199, 133, 1) 72%, rgba(237, 221, 83, 1) 100%);
+
+}
+#btn-4{
+	background: blue;
+	padding: 20px 50px 20px 50px;
+//background: linear-gradient(90deg,rgba(42, 82, 155, 0.77) 28%, rgba(190, 199, 87, 1) 47%, rgba(224, 237, 83, 1) 90%);
+color: white;
+}
+#btn-5{
+background: black;
+color: white;
+padding: 20px 50px 20px 50px;
+//background: linear-gradient(90deg, rgba(42, 82, 155, 0.77) 28%, rgba(230, 56, 21, 1) 36%, rgba(190, 199, 87, 1) 47%, rgba(224, 237, 83, 1) 90%);
+
+}
+#btn-6{
+background: #FF0000;
+padding: 20px 50px 20px 50px;
+//background: linear-gradient(90deg, rgba(42, 82, 155, 0.77) 28%, rgba(230, 56, 21, 1) 36%, rgba(190, 199, 87, 1) 47%, rgba(224, 237, 83, 1) 90%);
+
+}
+#btn-1:hover{
+	background: #a9a9a9;
+	
+}
+#btn-2:hover{
+	background: #a9a9a9;
+}
+#btn-3:hover{
+	background: #a9a9a9;
+}
+#btn-4:hover{
+	background: #a9a9a9;
+}
+#btn-5:hover{
+	background: #a9a9a9;
+
+}
+.tex>p>a{
+	text-decoration: none;
+	color: white;
+	font-family: Futara;
+
+}
+.tex>p:hover{
+	text-decoration: none;
+	color: white;
+	font-family: Futara;
+	transform: translateY(-10px);
+	transition: 0.1s;
+}
+
+/*.dro{
+	position: relative;
+	display: inline-block;
+}
+.dropdown-con
+{
+	display: none;
+	position: absolute;
+	min-height: 100px;
+box-shadow: 100px 100px 100px 100px rgba(0, 0, 0, 0.1);
+	z-index: 10;
+		margin-right: 200px;
+		flex-wrap: wrap;
+		top: 100%;
+		line-height: 30px;
+}
+.dropdown-con{
+	color: black;
+	padding: 28px 12px;
+	margin: 0;
+	text-align: left;
+
+}
+.dropdown-dro p:hover{
+	background: #f1f1f1;
+}*/
+ .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+        .dropdown-menu {
+            min-width: 500px;
+        }
+        .navbtn .btn {
+            background: transparent;
+
+        }
+        .navbtn .btn:hover {
+            background: rgba(255,255,255,0.1);
+        }
+        .bord{
+        	//box-shadow: 0px 0px 0px 0px  rgb(0, 0, 0, 0.1);
+        	border:2px solid #ADD8E6;
+        	background: repeating-linear-gradient(to right, white,#ADD8E6);
+
+        }
+.trans{
+
+	background: linear-gradient(360deg,gray,transparent);
+	background-clip:text ;
+	color: transparent;
+
+
+}
+ .but{
+ 	 border-bottom: 1px solid rgba(5, 1, 5, 5.1);
+ 	
+ }
+	</style>
+
+</head>
+<body>
+	<div class="container-fluid first"style="max-width: 100%;" >
+		<nav>
+			<ul class="navbar nav" style="height: 70px; font-size: 20px;" >
+				<li style="margin-left: 200px;"><i class="fa-solid fa-phone"></i>90000000000 </li>
+				<li style="position: relative; "><i class="fa-solid fa-envelope"></i> kha@gmail.com</li>
+				<li style="margin-left:25%;">Register</li>
+				<li>login</li>
+				<li><i class="fa-brands fa-searchengin"></i></li>
+				<li><i class="fa-solid fa-bell"></i></li>
+				<li style="margin-right:10%;"><i class="fa-thin fa-credit-card" style="color: yellow;"></i>card:0</li>
+			</ul>
+		</nav>
+		</div>
+		<div class="container-fluid bg-primary d-flex p-4" style="flex-wrap: wrap; max-width: 100%;">
+					<img src="https://www.famety.com/img/site-logos/famety-logo-beyaz.svg" class="image-fluid ms-5" >
+					<div style="margin-left:300px; font-size: 50px;">
+					<button class="btn  btn-primary mt-3"style="height: 60px;" >Intragram followers</button>
+					<button class="btn btn-primary mt-3"style="height: 60px;">intragram like</button>
+					<button class="btn btn-primary mt-3"style="height: 60px;">instgram comment</button>
+					<button class="btn btn-primary mt-3"style="height: 60px;">order stuts</button>
+					<button class="btn btn-primary mt-3"style="height: 60px;">contact us</button>
+				</div>
+				
+		</div>
+		<div class="container-fluid d-flex " style="background: #005063;">
+			<div style="border-radius: 0 75px 75px 0; height: 50px;width: 100px;margin: 0;padding: 0;margin-left: -15px; "  ></div>
+			<button class="btn "style="border-radius: 0 75px 75px 0;background: #00C0F0;margin-left: -20px; " >free intagram tools</button>
+			<button class="btn "style="border-radius: 0 75px 75px 0;background: #00C0F0;margin-left: 10px; " >free intagram senter</button>
+		</div>
+
+
+
+
+
+
+
+
+
+    <div class="container" style="display:flex; flex-wrap: wrap;">
+        <ul class="navbar nav d-flex" style="gap: 5px;">
+            <!-- Instagram Service -->
+            <li class="dropdown">
+                <button class="btn border dropdown-toggle" style="color: white;" id="btn-1">Instagram Service</button>
+                <div class="dropdown-menu" id="sugges1" style="text-align: center;">
+                    <div class="instagram-tools dropdown-item" style="font-family: 'Segoe UI', Roboto, sans-serif; max-width: 600px; margin: 0 auto; padding: 15px; background-color: #fafafa; border-radius: 12px;">
+                        <h1 style="color: #E1306C; font-size: 22px; text-align: center; margin-bottom: 20px; font-weight: 600;" class="dropdown-item">Free Instagram Tools</h1>
+                        
+                        <div class="tool-category" style="background-color: white; padding: 12px; margin-bottom: 12px; border-radius: 8px;  ">
+                            
+                            <p style="color:#E1306c; font-size: 14px; margin: 4px 0;"><span style="position: relative;right: 100px; font-size: 30px; ">💌</span>Instagram likes<span style="position: relative;left: 100px; font-size: 30px; ">></span></p>
+                        </div>
+                        
+                        <div class="tool-category" style="background-color: white; padding: 12px; margin-bottom: 12px; border-radius: 8px;  ">
+                            
+                            <p style="color: yellow; font-size: 14px; margin: 4px 0;color: red; "><span style="position: relative;right: 100px; font-size: 30px; ">👦</span>Instagram Followers<span style="position: relative;left: 100px; font-size: 30px; ">></span></p>
+                        </div>
+                        
+                        <div class="tool-category" style="background-color: white; padding: 12px; margin-bottom: 12px; border-radius: 8px;">
+                            
+                            <p style="color: #abc123; font-size: 14px; margin: 4px 0;"><span style="position: relative;right: 100px; font-size: 30px; ">📽️</span> Instagram Views<span style="position: relative;left: 100px; font-size: 30px; ">></span></p>
+                        </div>
+                        
+                        <div class="tool-category" style="background-color: white; padding: 12px; margin-bottom: 12px; border-radius: 8px;  ">
+                            
+                            <p style="color: pink; font-size: 14px; margin: 4px 0;color: red; "><span style="position: relative;right: 100px; font-size: 30px; ">📽️</span>Instagram rels<span style="position: relative;left: 100px; font-size: 30px; ">></span></p>
+                        </div>
+
+                        <div class="tool-category" style="background-color: white; padding: 12px; margin-bottom: 12px; border-radius: 8px;  ">
+                           
+                            <p style="color: olivedrab; font-size: 14px; margin: 4px 0;"><span style="position: relative;right: 100px; font-size: 30px; ">🔍</span>Instagram Others<span style="position: relative;left: 100px; font-size: 30px; ">></span></p>
+                        </div>
+                        
+                        <hr style="border: 0; height: 1px; background-color: #dbdbdb; margin: 16px 0;">
+                        
+                        <div class="tool-category" style="background-color: white; padding: 12px; border-radius: 8px;  ">
+
+
+                            <h3 style="color: #405DE6; font-size: 15px; margin: 8px 0; font-weight: 500;">Instagram</h3>
+                            <p style="color: #262626; font-size: 14px; margin: 4px 0;">Instagram</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+
+<!-- TikTok Service -->
+            <li class="dropdown">
+                <button class="btn border" style="color: white;" id="btn-2">TikTok Service</button>
+                <div class="dropdown-menu" id="sugges2">
+                    <a class="dropdown-item" href="#" style="color:pink;">Automatic TikTok Likes</a>
+                    <a class="dropdown-item" href="#" style="color:green;">TikTok Views</a>
+                    <a class="dropdown-item" href="#" style="color:yellow;">Automatic TikTok Followers</a>
+                    <a class="dropdown-item text-primary" href="#">Automatic TikTok Views</a>
+                    <a class="dropdown-item" href="#">TikTok Shares</a>
+                    <a class="dropdown-item" href="#">TikTok Comments</a>
+                    <a class="dropdown-item" href="#">TikTok Live Video Viewers</a>
+                    <a class="dropdown-item" href="#">TikTok Comment Likes</a>
+                    <a class="dropdown-item" href="#">TikTok Saves | New</a>
+                    <a class="dropdown-item" href="#">Free TikTok Likes</a>
+                    <a class="dropdown-item" href="#">Free TikTok Followers</a>
+                    <a class="dropdown-item" href="#">Free TikTok Views</a>
+                    <a class="dropdown-item" href="#">Free TikTok Saves</a>
+                </div>
+            </li>
+
+            <!-- YouTube Service -->
+            <li class="dropdown">
+                <button class="btn border" style="color: white;" id="btn-3">YouTube Service</button>
+                <div class="dropdown-menu" id="sugges3">
+                    <a class="dropdown-item" href="#">YouTube Subscribers</a>
+                    <a class="dropdown-item" href="#">YouTube Views</a>
+                    <a class="dropdown-item" href="#">Youtube Likes</a>
+                    <a class="dropdown-item" href="#">YouTube Live Views</a>
+                    <a class="dropdown-item" href="#">YouTube Auto Likes | New</a>
+                    <a class="dropdown-item" href="#">YouTube Auto Views | New</a>
+                    <a class="dropdown-item" href="#">YouTube Dislikes</a>
+                    <a class="dropdown-item" href="#">YouTube Comments</a>
+                    <a class="dropdown-item" href="#">YouTube Comment Upvotes</a>
+                    <a class="dropdown-item" href="#">YouTube Shares</a>
+                    <a class="dropdown-item" href="#">YouTube Watch Hours</a>
+                    <a class="dropdown-item" href="#">Free YouTube Subscribers</a>
+                    <a class="dropdown-item" href="#">Free YouTube Likes</a>
+                    <a class="dropdown-item" href="#">Free YouTube Views</a>
+                </div>
+            </li>
+
+            <!-- Facebook Service -->
+            <li class="dropdown">
+                <button class="btn border" style="color: white;" id="btn-4">Facebook Service</button>
+                <div class="dropdown-menu" id="sugges4">
+                    <a class="dropdown-item" href="#">Facebook Likes</a>
+                    <a class="dropdown-item" href="#">Facebook Page Likes</a>
+                    <a class="dropdown-item" href="#">Facebook Views</a>
+                    <a class="dropdown-item" href="#">Facebook Followers</a>
+                    <a class="dropdown-item" href="#">Facebook Reviews</a>
+                    <a class="dropdown-item" href="#">Facebook Comments</a>
+                    <a class="dropdown-item" href="#">Facebook Comment Likes</a>
+                    <a class="dropdown-item" href="#">Facebook Shares</a>
+                    <a class="dropdown-item" href="#">Facebook Live Viewers</a>
+                    <a class="dropdown-item" href="#">Free Facebook Likes</a>
+                    <a class="dropdown-item" href="#">Facebook Event Attendees | New</a>
+                    <a class="dropdown-item" href="#">Facebook Reels Views | New</a>
+                    <a class="dropdown-item" href="#">Facebook Reactions | New</a>
+                    <a class="dropdown-item" href="#">Facebook Group Members | New</a>
+                </div>
+            </li>
+
+
+<!-- Twitter Service -->
+            <li class="dropdown">
+                <button class="btn border" style="color: white;" id="btn-5">Twitter Service</button>
+                <div class="dropdown-menu" id="sugges5">
+                    <a class="dropdown-item" href="#">Twitter Likes</a>
+                    <a class="dropdown-item" href="#">Twitter Views</a>
+                    <a class="dropdown-item" href="#">Status Check</a>
+                    <a class="dropdown-item" href="#">Twitter Followers</a>
+                    <a class="dropdown-item" href="#">Twitter Retweets</a>
+                    <a class="dropdown-item" href="#">Twitter Bookmarks | New</a>
+                    <a class="dropdown-item" href="#">Twitter Automatic Retweets</a>
+                    <a class="dropdown-item" href="#">Automatic Twitter Likes | New</a>
+                    <a class="dropdown-item" href="#">Twitter (X) Space Listeners</a>
+                    <a class="dropdown-item" href="#">Twitter Poll Votes</a>
+                    <a class="dropdown-item" href="#">Twitter Impressions</a>
+                    <a class="dropdown-item" href="#">Automatic Twitter Views</a>
+                    <a class="dropdown-item" href="#">Twitter Clicks</a>
+                    <a class="dropdown-item" href="#">Twitter Comments | New</a>
+                    <a class="dropdown-item" href="#">Free Twitter Followers</a>
+                    <a class="dropdown-item" href="#">Free Twitter Retweets</a>
+                    <a class="dropdown-item" href="#">Auto Folic</a>
+                    <a class="dropdown-item" href="#">Free Twitter Likes</a>
+                </div>
+            </li>
+
+            <!-- Other Service -->
+            <li class="dropdown dropu">
+                <button class="btn border" style="color: white;" id="btn-6">Other Service</button>
+                <div class="dropdown-menu" id="sugges6" style="overflow: hidden;  left: auto;
+  right: 0;">
+                    <a class="dropdown-item" href="#" style="background: #5865F2; color: white; padding: 10px; border-radius: 5px; display: flex; align-items: center;  ">
+                        <span style="margin-right: 10px;">📱</span> Discord Members
+                    </a>
+                    <a class="dropdown-item" href="#" style="background: #36465D; color: white; padding: 10px; border-radius: 5px; display: flex; align-items: center;">
+                        <span style="margin-right: 10px;">✍️</span> Tumblr Services
+                    </a>
+                    <a class="dropdown-item" href="#" style="background: #4C75A3; color: white; padding: 10px; border-radius: 5px; display: flex; align-items: center;">
+                        <span style="margin-right: 10px;">🌐</span> VK Services
+                    </a>
+                    <a class="dropdown-item" href="#" style="background: #1AB7EA; color: white; padding: 10px; border-radius: 5px; display: flex; align-items: center;">
+                        <span style="margin-right: 10px;">🎬</span> Vimeo Services
+                    </a>
+                    <a class="dropdown-item" href="#" style="background: #FF5500; color: white; padding: 10px; border-radius: 5px; display: flex; align-items: center;">
+                        <span style="margin-right: 10px;">👋</span> Kwai Services
+                    </a>
+                    <a class="dropdown-item" href="#" style="background: #FF5500; color: white; padding: 10px; border-radius: 5px; display: flex; align-items: center;">
+                        <span style="margin-right: 10px;">🎵</span> Audromack Services
+                    </a>
+                    <a class="dropdown-item" href="#" style="background: #0085FF; color: white; padding: 10px; border-radius: 5px; display: flex; align-items: center;">
+                        <span style="margin-right: 10px;">☁️</span> Bluesky Followers
+
+
+</a>
+                    <a class="dropdown-item" href="#" style="background: #2D2D2D; color: white; padding: 10px; border-radius: 5px; display: flex; align-items: center;">
+                        <span style="margin-right: 10px;">🎮</span> Trovo Services
+                    </a>
+                    <a class="dropdown-item" href="#" style="background: #00AB6C; color: white; padding: 10px; border-radius: 5px; display: flex; align-items: center;">
+                        <span style="margin-right: 10px;">✏️</span> Medium Followers | New
+                    </a>
+                    <a class="dropdown-item" href="#" style="background: #FF0050; color: white; padding: 10px; border-radius: 5px; display: flex; align-items: center;">
+                        <span style="margin-right: 10px;">❤️</span> Likee Followers
+                    </a>
+                    <a class="dropdown-item" href="#" style="background: linear-gradient(45deg, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #9400D3); color: white; padding: 10px; border-radius: 5px; display: flex; align-items: center; justify-content: center; font-weight: bold; text-align: center;">
+                        <span style="margin-right: 10px;">🎁</span> Free Social Media Tools
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="container mt-2 "  style="background:#F9F9FA ;width:1000px;margin-left:220px ; border-radius: 20px;">
+            <div style="flex-wrap:wrap;"class="d-flex" >
+			<ul style="border-radius: 10px;  "class="navbar nav  p-3 d-flex" style="flex-wrap:wrap ;" >
+				<li><button class="btn"><i class="fa-brands fa-facebook" style="margin-right:10px;"></i>instrgram tool</button> </li>
+				<li><button class="btn "><i class="fa-brands fa-twitter" style="margin-right:10px;"></i>twiter tool</button> </li>
+				<li><button class="btn "><i class="fa-brands fa-youtube" style="margin-right:10px;"></i>youtube tool</button> </li>
+				<li><button class="btn "><i class="fa-brands fa-tiktok" style="margin-right:10px;"></i>tiktok tool</button> </li>
+				<li><button class="btn">...other tool</button></li>
+			</ul>
+		</div>
+    </div>
+		<div class="container mt-2 " style="width:1000px;  ">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex" style="flex-wrap: wrap;">
+				<ul style="border: 1px solid gray;border-radius: 10px; "class="navbar nav p-2 d-flex" style="flex-wrap: wrap;">
+				<li><button class="btn">instrgram follower counter</button> </li>
+				<li><button class="btn">intragram font generetor</button> </li>
+				<li><button class="btn">instrgram story viewer</button> </li>
+				<li><button class="btn">intrgram stocry chacker<span style="border-left: 2px solid green; color: green;margin-left: 10px; ">  new </span></button> </li>
+			</ul>
+        </div>
+		</div>
+    </div>
+</div>
+
+
+		<div class="container mt-4">
+			<h3 style="text-align: center; color:skyblue;">Instagram Followers Counter</h3>
+			<div  style="text-align:right;">?</div>
+			<h2><mark >
+				Our followers count tool works with real-time data and can be used unlimitedly.
+			</mark></h2>
+			<div class="img container mt-4 ">
+				<img src="https://www.famety.com/img/uploads/instagram-follower-count.png" style="float: left; margin-right:20px ; " >
+				
+				<input type="text" name=""class="form-control " style="width:790px;">
+				<button class="mt-2  p-3"style="text-align: center;width:790px;background: skyblue; " >check</button>
+			</div>
+		</div>
+	</div>
+
+		<div class="container mt-5" style="margin-left:200px;margin-left: 120px;clear:both; margin-top:200px ;  ">
+			<button class="btn btn p-3" style="color: white;background: #dcdcdc ; ">intragram fololowers</button>
+			<button  class="btn btn p-3 " style="color: white; background:#dcdcdc ;">intragram fololowers</button>
+			<button class="btn btn p-3 " style="color: white; background: #dcdcdc ;">intragram fololowers</button>
+		</div>
+
+		<div class="container" style="clear: both;">
+			<p>Instagram follower count tool tracks your live Instagram statistics in real-time to update you about your account. Instagram followers count can help you determine your next<br><center> strategy to grow your account.</center></p>
+		</div>
+		<div class="container">
+			<a href="https" style="text-decoration: none;font-size: 30px; "><center>What Is Famety’s Instagram Followers Count Tool?</center></a>
+			<p>Famety’s Instagram Followers Count Tool is a free tool design to help you quickly check the follower count and key statistics of any public Instagram profile. You can track your own growth or analyze a competitor. Our tool allows you to get a snapshot of important account data without logging into Instagram <center style="margin: -20px;">or using complex analytics platforms.</center></p>
+			<p>Our tool is simple and user-friendly solution for social media managers, marketers, influencers, or anyone curious about Instagram profile<strong> growth </strong> metrics.</p>
+			<a href="#">How Does the Followers Count Tool Work?</a>
+			<p>You can follow the simple steps below to use our tool without complex steps. We provide you the best and easiest way to check your data.</p>
+			<ol>
+				<li>Enter the Instagram username of the account you want to check.</li>
+				<li>Click the “Check” button.</li>
+				<li>Our tool will display current data such as follower count and post count.</li>
+			</ol>
+			<p>Please note that this tool does not provide live, real-time tracking. Tool updates the information each time you perform a search manually. If you want to check the recent count, you will need to re-enter the username and check again.</p>
+			<p>Famety's tool does not require you to connect your Instagram account or share your personal information as our tool is completely safe.</p>
+		</div>
+
+		<div class="container-fluid p-5"style="background: #F9F9FA ; padding-left: 0; padding-right:0;" >
+			<div class="row">
+				<div class="col-sm-5">
+					<img src="https://www.famety.com/img/uploads/Instagram-Statistics.png"class="image-fluid" style="height: 500px; width: 500px;" >
+				</div>
+				<div class="col-sm">
+					<h3 style="color:skyblue;">What Information Can I See With This Tool?</h3>
+					<p>With our free and simple tool you can view the some of the most needed information about IG.</p>
+					<ul class="mt-2">
+						<li>Total number of followers the account currently has.</li>
+						<li>Total number of posts published by that account.</li>
+						<li>The username and profile picture associated with the account.</li>
+					</ul>
+					<p>Our tool completely focuses on providing essential, high-level profile grow metrics to give you quick insights, simple as it sounds. We hope that these data points are useful for making informed decisions.</p>
+					<h3 style="color:skyblue;">Does It Work for Both Personal and Business Instagram Accounts?</h3>
+					<p>Yes of course, Famety’s Instagram Followers Count tool works for both personal and business Instagram accounts. As long as the profile is public, you can check using our tool basic <strong>growth</strong> statistics such as follower count and post count.</p>
+					<p>But don't forget that our tool does not work for private profiles due to Instagram’s privacy restrictions, so you can only check public accounts.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid mt-5 p-5" style="background:#F9F9FA ;">
+			<div class="row">
+				<div class="col-sm">
+				<h3 class="text-primary">Can I Check Anyone’s Instagram Profile With This Tool?</h3>
+				<p>Absolutely you can do this! You can use this tool to <a href="#">check any public Instagram account</a>, it doesn't matter if it’s your own profile, a competitor, or a celebrity. Simply enter the correct username and our system will pull the available data related to that account.</p>
+				<p>Since our tool does not need you to login or give an authorization, this is a convenient option for quick look-ups. However, as you know for private accounts, you cannot see any data.</p>
+				<h3 class="text-primary">Is the Followers Count Tool Free to Use?</h3>
+				<p>You can use the tool as many times as you want to monitor different accounts or simply satisfy your curiosity. Zero costs, zero efforts. Famety aims to make social media insights accessible to everyone without barriers.</p>
+			</div>
+			<div class="col-sm">
+				<img src="https://www.famety.com/img/uploads/Instagram-Live-Count.png" style="height:350px;width: 500px;margin: 0 40px 0 20px; ">
+			</div>
+		</div>
+	</div>
+	
+	<hr class="p-5">
+
+
+
+
+
+	<center><iframe width="560" height="315" src="https://www.youtube.com/embed/6Ld1VndrP24?si=JSQTJkEd2tnHixPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+	<div class="mt-5 container-fluid p-5" style="background:#F9F9FA ;">
+		<h3 class="m-5 text-primary" style="text-align:center;">Instagram Followers Counter Comment on your experience</h3>
+		<p style="text-align: center;">We care about your ideas and opinions. You can help us improve by evaluating our services and tools provided by<br> our website by filling in our "comment on your experience" section down below.</p>
+	
+	<div class="mt-5 container-fluid">
+		<div class="row">
+		<div class="col-sm ">
+			
+				<form class="from p-5 Shadow">
+					<h4 class="mb-5">leve a comment</h4>
+					<label class="label "><strong> full name</strong> </label>
+					<input type="text" name="" class="form-control p-4 mt-5"style="border-radius:20px;">
+					<label class="label mt-5"><strong>email</strong></label>
+					<input type="email" name="" class="form-control p-4 mt-5" style="border-radius:20px;">
+
+					<label class="label mt-5"><strong>rangking</strong></label><br>
+					<label class="label mt-5 mb-5"><strong>comment</strong></label><br>
+					<textarea style="width:100%;height: 150px; border-radius: 20px;"></textarea>
+					<br>
+					<button style="text-align:center; color: white; width: 100%; height:100px; border-radius
+					:20px;font-size: 20px; " class="btn bg-primary mt-3" >send</button>
+				</form>
+			
+		</div>
+		<div class="col-sm" style="font-family: Brush Script MT;">
+			<h3><strong>Total:</strong> 104 Rating</h3>
+			<h2 style="color: gold;font-size: 20px; "class="pb-5 but" >⭐⭐⭐⭐ ⭐</h2>
+
+			<h3 class="pt-5">loving chacing followers strat with this tool</h3>
+			<h2 style="color: gold;font-size: 20px; "class="pb-5 but" >⭐⭐⭐⭐ ⭐</h2>
+
+			<h3 class="pt-5">live follower count is super hungry tracking growth</h3>
+			<h2 style="color: gold;font-size: 20px; "class="pb-5 but" >⭐⭐⭐⭐ ⭐</h2>
+
+			<h3 class="pt-5">wise is had historial data, but it does the job for quick checks.</h3>
+			<h2 style="color: gold;font-size: 20px; "class="pb-5 but" >⭐⭐⭐⭐ ⭐</h2>
+
+			
+
+		</div>
+	</div>
+	</div>
+</div>
+<div class="container-fluid p-5" style="background-color: #ADD8E6;">
+	<div class="row">
+		<div class="col-md ">
+			<img src="https://www.famety.com/img/site-logos/famety-logo-beyaz.svg" class="image-fluid ms-5" >
+			<div style="line-height: 5px; color: white;">
+				<p>Famety.com is a Estonia-based (Tallinn, Estonia) </p><p>corporate and trusted website that has been</p> <p>providing services to improve your account on</p><p> social media platforms like Instagram, Twitter,</p><p> Facebook, TikTok, YouTube and professional</p><p> SEO services to websites since 2013. Copyright © 2025</p> 
+				<p>Famety. All Rights Reserved.</p>
+		   </div>
+		   	<div class="mt-5  p-3 bord" style="width: 360px; opacity: 40%; z-index: 0;">
+		   		<p class="pb-2" ><span style="margin-right:100px;" class="trans"><i class="fa-solid fa-building"></i>  company name</span>jengal OU</p>
+
+		   		<p style="border-bottom: 2px solid gray ;border-top: 2px solid gray ;"class="pb-3 pt-3" ><span style="margin-right:100px;"class="trans"><i class="fa-solid fa-location-dot"></i> Address</span>Veskiposti 2-1002 Tallinn</p>
+
+		   		<p class="pb-2" ><span style="margin-right:100px;"class="trans"><i class="fa-solid fa-phone"></i> phone</span>+123456789</p>
+		   	</div>
+		 	<div class="mt-3">
+		   <img src="https://www.famety.com/img/uploads/payment-methods.png?v=1673624893">
+		   <img src="https://images.dmca.com/Badges/dmca-badge-w150-5x1-01.png?ID=de14fbb0-b95f-48a1-91e2-71332ea80c94"class="mt-4" style="margin-left: 90px;">
+		   <p class="mt-4" style="color: white;line-height: 2px; ">This website is not affiliated with or endorsed by</p>
+		   <p style="color: white;line-height: 2px; "> SoundCloud or Instagram LLC.</p>
+		   <h2 class="mt-5">Social Medias</h2>
+		   <button class="p-3" style="background: blue;color: white; "><i class="fa-thin fa-credit-card" style="color: yellow;"></i></button>
+		   <button class="p-3"style="background: blue;color: white; "><i class="fa-solid fa-envelope"></i></button>
+		   <button class="p-3"style="background: blue;color: white; "><i class="fa-brands fa-youtube"></i></button>
+		   <button class="p-3"style="background: blue;color: white; "><i class="fa-brands fa-twitter"></i></button>
+		   <button class="p-3"style="background: blue;color: white; "><i class="fa-brands fa-facebook"></i></button><br>
+		   <button class="p-3 mt-1"style="background: blue;color: white; "><i class="fa-brands fa-tiktok"></i></button>
+		   
+		</div>
+		
+		</div><!--first col and-->
+			<div class="col-md mt-5 tex">
+					<h3><a href="#" style="text-decoration:none; color:white;">isntrgram service</a></h3>
+					<p> <a href="#" >Automatic TikTok Likes</a></p>
+                   <p>  <a href="#">TikTok Views</a></p>
+                   <p> <a href="#" style="color:yellow;">Automatic TikTok Followers</a></p>
+                   <p> <a href="#">Automatic TikTok Views</a></p>
+                   <p> <a href="#">TikTok Shares</a></p>
+                   <p> <a href="#">TikTok Comments</a></p>
+                    <p><a href="#">TikTok Live Video Viewers</a></p>
+                    <p><a href="#">TikTok Comment Likes</a></p>
+                   <p> <a href="#">TikTok Saves | New</a></p>
+                    <p><a  href="#">Free TikTok Likes</a></p>
+                    <p><a href="#">Free TikTok Followers</a></p>
+                    <p><a href="#">Free TikTok Views</a></p>
+                    <p><a  href="#">Free TikTok Saves</a></p>
+			</div>
+
+
+			<div class="col-md mt-5 tex">
+					<h3><a href="#" style="text-decoration:none; color:white;">isntrgram service</a></h3>
+					<p> <a href="#" >Automatic TikTok Likes</a></p>
+                   <p>  <a href="#">TikTok Views</a></p>
+                   <p> <a href="#" style="color:yellow;">Automatic TikTok Followers</a></p>
+                   <p> <a href="#">Automatic TikTok Views</a></p>
+                   <p> <a href="#">TikTok Shares</a></p>
+                   <p> <a href="#">TikTok Comments</a></p>
+                    <p><a href="#">TikTok Live Video Viewers</a></p>
+                    <p><a href="#">TikTok Comment Likes</a></p>
+                   <p> <a href="#">TikTok Saves | New</a></p>
+                    <p><a  href="#">Free TikTok Likes</a></p>
+                    <p><a href="#">Free TikTok Followers</a></p>
+                    <p><a href="#">Free TikTok Views</a></p>
+                    <p><a  href="#">Free TikTok Saves</a></p>
+
+			</div>
+
+	</div>
+	<div style="margin-left:70%;border-radius: 100%; background:palegreen; height: 100px;width: 100px; text-align: center; align-content: center; font-size: 70px;" ><a href="#">🔝 </a></div>
+</div>
+
+</body>
+</html>

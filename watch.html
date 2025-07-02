@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+	<title></title>
+	<style type="text/css">
+body{
+	animation-duration: 3s;
+	animation-name: colo;
+	transform: translateY(10px);
+	transform: rotateY(0);
+}
+		@keyframes colo{
+			5%{transform: rotateY(180deg);}
+			
+			50%{transform: translateY(-1000px);}
+
+
+		}
+		html{
+			 scroll-behavior: smooth;
+		}
+li{
+	color: white;
+}
+		body{
+			background: gray;
+			justify-self: center;
+		}
+					.a1,.a2{
+							display: flex;
+							gap: 40px;
+							list-style: none;
+					}
+					li:nth-child(5)
+					{
+							margin-right:500px ;
+					}
+					.input
+					{
+						cursor: ;
+
+							width: 70%;
+							background: gray;
+							border: none;
+							border-left:2px solid white ;
+							border-right:2px solid white ;
+							border: 2px solid darkgray;
+margin: 10px 0 10px 0;
+							height: 30px;
+
+						
+					}
+					header{
+						background: gray;
+
+					}
+					.selet{
+						height: 30px;
+						width: 100px;
+					}
+					.k,.k2{
+						list-style: none;
+						display: flex;
+						gap: 300px;
+						margin-top:10px ;
+						margin-bottom:10px ;
+
+					}
+					.k2:nth-child(1){
+						margin-right: 30px;
+					}
+					.li{
+						padding:0 40px 0 40px;
+						border: 2px solid black;
+						display: flex;
+						text-align: right;
+						overflow: hidden;
+					}
+					.j{
+						margin-left:0px ;
+						position: relative;
+						right: 40px;
+					}
+					
+
+
+			h2 {
+			  margin: 1.25rem;
+
+			  text-align: center;
+			}
+
+			footer {
+			  margin: 1.25rem 0;
+			  text-align: center;
+			}
+
+		
+			.grid-item {
+			  background-color: #ffffff;
+			  border: 1px solid #e0e0e0;
+		
+			  border-radius: 0.5rem;
+			  padding-block-end: 2.5rem;
+			  text-align: center;
+			  display: grid;
+			  justify-content: center;
+			  padding-top: 2rem;
+			  position: relative;
+			}
+
+			
+			.carousel-container {
+			  width: 100%;
+			  overflow: hidden;
+			  display: flex;
+			  justify-content: center;
+			  align-items: center;
+			}
+
+			
+			.carousel-content {
+			  display: flex;
+			  animation: scroll 50s linear infinite;
+			}
+
+			
+			.carousel-item {
+			  min-width: 200px;
+			  height: 150px;
+			  margin-right: 10px;
+			  display: flex;
+			  justify-content: center;
+			  align-items: center;
+			}
+
+			.carousel-item img {
+			  width: 100%;
+			  height: 100%;
+			  object-fit: cover;
+			  border-radius: 8px;
+			}
+
+
+			@keyframes scroll {
+			 0% {
+			    transform: translate(0);
+			  }
+			100% {
+			    transform: translate(-50%);
+			  }
+			}
+
+			section {
+			  display: flex;
+			  width: 100%;
+			  height: 100%;
+			  max-width: 100%;
+			  max-height: 100%;
+			  place-items: center;
+			  margin: 0px;
+			  padding: 0px;
+			  list-style-type: none;
+			  opacity: 1;
+			  mask-image: linear-gradient(
+			    to right,
+			    rgba(0, 0, 0, 0) 0%,
+			    rgb(0, 0, 0) 12.5%,
+			    rgb(0, 0, 0) 87.5%,
+			    rgba(0, 0, 0, 0) 100%
+			  );
+			  overflow: hidden;
+			}
+
+			.container {
+			  top: 300px;
+
+			  background-position:center ;
+			}
+			.container .button-holder .button{
+			  background-color:white ;
+			  width: 15px;
+			  height: 15px;
+			  border-radius: 15px;
+			  display:inline-block ;
+			  margin: .3rem;
+			}
+			.container .button-holder{
+			  position: absolute;
+			  left: 45%;
+			  bottom: 0%;
+			}
+
+
+			ul { list-style:none; margin:0; padding:0 }
+			#watch { font-size:1em; position:relative }
+			#watch .frame-face {
+			  position:relative;
+			  width:30em;
+			  height:30em;
+			  margin:2em auto;
+			  border-radius:15em;
+			 // box-shadow:rgba(0,0,0,.8) .5em .5em 4em;
+			}
+			#watch .frame-face:before {
+			  content:'';
+			  width:29.4em;
+			  height:29.4em;
+			  border-radius:14.7em;
+			  position:absolute;
+			  top:.3em; left:.3em;
+			  
+			}
+			#watch .frame-face:after {
+			  content:'';
+			  width:28em;
+			  height:28em;
+			  border-radius:14.2em;
+			  position:absolute;
+			  top:.9em; left:.9em;
+		//	  box-shadow:inset rgba(0,0,0,.2) .2em .2em 1em;
+			//  border:.1em solid rgba(0,0,0,.2);
+			 
+			}
+			#watch .minute-marks li {
+  display:block;
+  width:.2em;
+  height:.6em;
+  background:white;
+  position:absolute;
+  top:50%; left:50%;
+  margin:-.4em 0 0 -.1em;
+}
+
+#watch .digits {
+  width:30em;
+  height:30em;
+  border-radius:15em;
+  position:absolute;
+  top:0; left:50%;
+  margin-left:-15em;
+}
+#watch .digits li {
+  font-size:1.6em;
+  display:block;
+  width:1.6em;
+  height:1.6em;
+  position:absolute;
+  top:50%; left:50%;
+  line-height:1.6em;
+  text-align:center;
+  margin:-.8em 0 0 -.8em;
+  font-weight:bold;
+}
+						#watch .digits li:nth-child(1) { transform:translate(3.9em, -6.9em) }
+						#watch .digits li:nth-child(2) { transform:translate(6.9em, -4em) }
+						#watch .digits li:nth-child(3) { transform:translate(8em, 0) }
+						#watch .digits li:nth-child(4) { transform:translate(6.8em, 4em) }
+						#watch .digits li:nth-child(5) { transform:translate(3.9em, 6.9em) }
+						#watch .digits li:nth-child(6) { transform:translate(0, 8em) }
+						#watch .digits li:nth-child(7) { transform:translate(-3.9em, 6.9em) }
+						#watch .digits li:nth-child(8) { transform:translate(-6.8em, 4em) }
+						#watch .digits li:nth-child(9) { transform:translate(-8em, 0) }
+						#watch .digits li:nth-child(10) { transform:translate(-6.9em, -4em) }
+						#watch .digits li:nth-child(11) { transform:translate(-3.9em, -6.9em) }
+						#watch .digits li:nth-child(12) { transform:translate(0, -8em) }*/
+						#watch .digits:before {
+						  content:'';
+						  width:1.6em;
+						  height:1.6em;
+						  border-radius:.8em;
+						  position:absolute;
+						  top:50%; left:50%;
+						  margin:-.8em 0 0 -.8em;
+						  background:white;
+						}
+						#watch .digits:after {
+						  content:'';
+						  width:4em;
+						  height:4em;
+						  border-radius:2.2em;
+						  position:absolute;
+						  top:50%; left:50%;
+						  margin:-2.1em 0 0 -2.1em;
+						  border:.1em solid #c6c6c6;
+						 
+}
+@keyframes hours { to {transform:rotate(335deg)} }
+									#watch .hours-hand {
+									  width:.8em;
+									  height:7em;
+									  border-radius:0 0 .9em .9em;
+									  background:#232425;
+									  position:absolute;
+									  bottom:50%; left:50%;
+									  margin:0 0 -.8em -.4em;
+									  box-shadow:#232425 0 0 2px;
+									  transform-origin:0.4em 6.2em;
+									  transform:rotate(-25deg);
+									  animation:hours 43200s linear 0s infinite;
+}
+#watch .hours-hand:before {
+									  content:'';
+									  background:inherit;
+									  width:1.8em;
+									  height:.8em;
+									  border-radius:0 0 .8em .8em;
+									  box-shadow:#232425 0 0 1px;
+									  position:absolute;
+									  top:-.7em; left:-.5em;
+}
+#watch .hours-hand:after {
+						  content:'';
+						  width:0; height:0;
+						  border:.9em solid #232425;
+						  border-width:0 .9em 2.4em .9em;
+						  border-left-color:transparent;
+						  border-right-color:transparent;
+						  position:absolute;
+						  top:-3.1em; left:-.5em;
+}
+@keyframes minutes { to {transform:rotate(422deg)} }
+										#watch .minutes-hand {
+										  width:.8em;
+										  height:12.5em;
+										  border-radius:.5em;
+										  background:#343536;
+										  position:absolute;
+										  bottom:50%; left:50%;
+										  margin:0 0 -1.5em -.4em;
+										  box-shadow:#343536 0 0 2px;
+										  transform-origin:0.4em 11em;
+										  transform:rotate(62deg);
+										  animation:minutes 3600s linear 0s infinite;
+}
+@keyframes seconds { to {transform:rotate(480deg)} }
+									#watch .seconds-hand {
+									  width:.2em;
+									  height:14em;
+									  border-radius:.1em .1em 0 0/10em 10em 0 0;
+									  background:#c00;
+									  position:absolute;
+									  bottom:50%; left:50%;
+									  margin:0 0 -2em -.1em;
+									  box-shadow:rgba(0,0,0,.8) 0 0 .2em;
+									  transform-origin:0.1em 12em;
+									  transform:rotate(120deg);
+									  animation:seconds 60s steps(60, end) 0s infinite;
+}
+#watch .seconds-hand:after {
+									  content:'';
+									  width:1.4em;
+									  height:1.4em;
+									  border-radius:.7em;
+									  background:inherit;
+									  position:absolute;
+									  left:-.65em; bottom:1.35em;
+}
+#watch .seconds-hand:before {
+									  content:'';
+									  width:.8em;
+									  height:3em;
+									  border-radius:.2em .2em .4em .4em/.2em .2em 2em 2em;
+									  box-shadow:rgba(0,0,0,.8) 0 0 .2em;
+									  background:inherit;
+									  position:absolute;
+									  left:-.35em; bottom:-3em;
+}
+#watch .digital-wrap {
+								  width:9em;
+								  height:3em;
+								  border:.1em solid #222;
+								  border-radius:.2em;
+								  position:absolute;
+								  top:50%; left:50%;
+								  margin:3em 0 0 -4.5em;
+								  overflow:hidden;
+								  background:#4c4c4c;
+
+#watch .digital-wrap ul {
+								  float:left;
+								  width:2.85em;
+								  height:3em;
+								  border-right:.1em solid #000;
+								  color:#ddd;
+								  font-family:Consolas, monaco, monospace;
+}
+								#watch .digital-wrap ul:last-child { border:none }
+								#watch .digital-wrap li {
+								  font-size:1.5em;
+								  line-height:2;
+								  letter-spacing:2px;
+								  text-align:center;
+								  position:relative;
+								  left:1px;
+}
+
+@keyframes dsm {
+  to { transform:translateY(-120em) }
+}
+
+
+	</style>
+</head>
+<body>
+<!--	<nav class="a1">
+	<ul class="a2">
+		<li>FICUP</li>
+		<li>tools</li>
+		<li>img</li>
+		<li>video</li>
+		<li>tamplet</li>
+		<li>video</li>
+		<li>tamplet</li>
+	</ul>
+	</nav>
+	<header>
+		<select class="selet">
+			<option>yes</option>
+			<option>yes</option>
+			<option>yes</option>
+			<option>yes</option>
+		</select>
+		<input type="text" name="n" class="input" value="tgftyftyybujnuin">
+		<span>bg</span>
+		<span>j</span>
+		<input type="sarch" name="">
+	</header>
+		<div class="k2">
+			<ul class="k">
+				
+				<li class="li"><i class="fa-solid fa-photo-film"></i>photes</li>
+				<li class="li"><i class="fa-solid fa-stopwatch"></i>clock</li>-
+				<li class="li"><i class="fa-brands fa-facebook"></i>fecabook</li>
+				<li class="li"><i class="fa-solid fa-inbox"></i>instgram</li>
+			</ul>
+		</div>
+		</header>
+-->
+
+<div class="grid-item" id="projects" style="background: gray;">
+  <h2>watchs</h2>
+  
+  </div>
+</div>
+
+<footer>
+  
+
+</footer>
+
+
+
+<div id="watch">
+  <div class="frame-face" style="background-image:url('https://tse1.mm.bing.net/th/id/OIP.Uj8c43n2aoauAx-9gxvVIQHaD4?pid=Api&P=0&h=180'); border: 4px solid white;background-size: 100% 100%;background-repeat: no-repeat;  "></div>
+  
+  <div class="digital-wrap" style="mix-blend-mode: multiply;">
+   
+    <ul class="digit-seconds">
+      <li>20</li><li>21</li><li>22</li><li>23</li>
+      <li>24</li><li>25</li><li>26</li><li>27</li><li>28</li><li>29</li>
+      <li>30</li><li>31</li><li>32</li><li>33</li><li>34</li><li>35</li>
+      <li>36</li><li>37</li><li>38</li><li>39</li><li>40</li><li>41</li>
+      <li>42</li><li>43</li><li>44</li><li>45</li><li>46</li><li>47</li>
+      <li>48</li><li>49</li><li>50</li><li>51</li><li>52</li><li>53</li>
+      <li>54</li><li>55</li><li>56</li><li>57</li><li>58</li><li>59</li>
+      <li>00</li><li>01</li><li>02</li><li>03</li><li>04</li><li>05</li>
+      <li>06</li><li>07</li><li>08</li><li>09</li><li>10</li><li>11</li>
+      <li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li>
+      <li>18</li><li>19</li>
+    </ul>
+  </div>
+  <ul class="digits">
+    <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li>
+    <li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li>
+  </ul>
+  <div class="hours-hand"></div>
+  <div class="minutes-hand"></div>
+  <div class="seconds-hand"></div>
+</div>
+
+
+</body>
+</html>
